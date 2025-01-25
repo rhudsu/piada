@@ -34,16 +34,11 @@
               <div id="titulo">Piada do dia
                 <div id="piada">
                     Por que o desenvolvedor faliu?<br> <span style="color: Orange;"> Porque ele usou todo o seu cache.</span>
-                    <div id="user"><span style="color: Orange;">~</span> Lázaro</div>
+                    <!-- <div id="user"><span style="color: Orange;">~</span> Lázaro</div> -->
                 </div>  
               </div> 
 
-            <button type="button" class="btn btn-outline-primary" id="enviarBotoom" data-bs-toggle="modal" data-bs-target="#modalPiada"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/replay.png" alt="replay"/>
-
-
-            </button>
-
-
+            <button type="button" class="btn btn-outline-primary" id="enviarBotoom" onclick="loadpiada()"><img width="25" height="25" src="src/refresh.png" alt="refresh"/></button>
             <button type="button" class="btn btn-outline-primary" id="enviarBotoom" data-bs-toggle="modal" data-bs-target="#modalPiada">envie a sua</button>
 
 
@@ -82,6 +77,19 @@
 <script>
   var modal = new bootstrap.Modal(document.getElementById('modalPiada'));
   modal.hide();
+
+  function loadpiada() {
+    var piadas =
+    [
+      'Qual é o cachorro preferido dos programadores? <br> <span style="color: Orange;"> Um Pug!</span>', 
+      'Como os computadores pedem a conta? <br> <span style="color: Orange;"> “Dê-me um byte, por favor.”</span>', 
+      'Por que o programador foi ao médico? <br> <span style="color: Orange;"> Porque ele tinha problemas de “cache”.</span>', 
+      'Por que a função estava triste? <br> <span style="color: Orange;"> Porque tinha muitos argumentos.</span>', 
+    ];
+    
+    var sorteio = piadas[Math.floor(Math.random() * piadas.length)];
+    document.getElementById("piada").innerHTML = sorteio;
+  } 
 </script>
 
 </html>

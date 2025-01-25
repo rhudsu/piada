@@ -1,8 +1,8 @@
 main {
-    max-width: 1000px;
+    max-width: 100%;
     margin: auto;
     background-color: #fffff0;
-    margin-top: 200px;
+    margin-top: 7%;
     position: flex;
     text-align: center;
 }
@@ -17,7 +17,7 @@ body
 ul {
     list-style-type: none;
     margin: 0;
-    padding: 20px 20px;
+    padding: 1% 1%;
     overflow: hidden;
     background-color: #ffc800;
     text-align: right;
@@ -25,14 +25,14 @@ ul {
   
   li {
     float: right;
-    margin-right: 10px;
+    margin-right: 0.5%;
   }
   
   li a {
     display: block;
     color: rgb(255, 255, 255);
     text-align: center;
-    padding: 10px 20px;
+    padding: 10% 1%;
     text-decoration: none;
   }
   
@@ -46,7 +46,6 @@ ul {
     font-weight: 500;
     font-style: normal;
     font-size: 20px;  
- 
   }
 
   .navegacao img{
@@ -58,16 +57,13 @@ ul {
   }
   
   .navegacao h1{
-    margin-left: 7.1%;
+    margin-left: 7.3%;
     width: 5%;
     height: auto;
     position: absolute;
-    margin-top: 1%;
+    margin-top: 0.7%;
   }
  
-
-  
-
   #modalPiada{
     text-align: left;
     margin: auto;
@@ -98,8 +94,8 @@ ul {
     background-color: rgb(255, 255, 255);
     font-size: 20px;
     padding: 50px;
-    max-width: 60%;
-    min-height: 50%;
+    max-width: 50%;
+    min-height: 40%;
     overflow-wrap: break-word;
     margin: auto;
     border-radius: 20px;
